@@ -1,45 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-Br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Meus objetivos do ano</title>
+        <title>Agro Conecta</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="conteudo-principal">
-            <h2 class="titulo-principal">Meus Objetivos do ano <span>_</span></h2>
-            <div class="conteudo">
-                <div class="botoes">
-                    <button class="botao ativo">Cursos na Alura</button>
-                    <button class="botao">Criar projetos em JavaScript</button>
-                    <button class="botao">Criar um portfólio</button>
-                    <button class="botao">Atualizar meu currículo</button>
-                </div>
-                <div class="aba-textos">
-                    <div class="aba-conteudo ativo">
-                        <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3> 
-                        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                        <div class="contador" id="contador1"></div>
-                    </div>                
-                    <div class="aba-conteudo">
-                        <h3 class="aba-conteudo-titulo-principal">Criar 6 projetos em JavaScript</h3> 
-                        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                        <div class="contador" id="contador2"></div>
-                    </div>
-                    <div class="aba-conteudo">
-                        <h3 class="aba-conteudo-titulo-principal">Criar um portfólio com os meus 3 melhores projetos</h3> 
-                        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                        <div class="contador" id="contador3"></div>
-                    </div>
-                    <div class="aba-conteudo">
-                        <h3 class="aba-conteudo-titulo-principal">Atualizar meu currículo com os certificados da Alura</h3> 
-                        <h4 class="aba-conteudo-titulo-secundario">Tempo para completar o objetivo</h4>
-                        <div class="contador" id="contador4"></div>
-                    </div>
-                </div>                
+        <div class="header">
+            <img src="simbolo.jpeg" alt="Logo" class="logo">
+            <h1 class="site-title" button onclick="reloadPage()">Agro Conecta</h1>
+            <div class="navigation">
+                <button onclick="showDiv('home')">Página Inicial</button>
+                <button onclick="showDiv('sobre')">Sobre Nós</button>
+                <button onclick="showDiv('eventos')">Eventos</button>
+                <button onclick="showDiv('recursos')">Recursos e Informações</button>
+                <button onclick="showDiv('calendario')">Calendário de Plantio</button>
+                <button onclick="showDiv('contato')">Contato</button>
             </div>
-        </section>
+        </div>
+        <div class="content">
+            <div id="home">
+                <h2>Bem-vindo ao Agro Conecta</h2>
+                <p>Somos uma comunidade online dedicada a unir agricultores, produtores rurais e moradores de áreas urbanas. Acreditamos que, ao conectar esses mundos, podemos trabalhar juntos para um futuro mais sustentável e próspero. No Agro Conecta, você encontrará uma variedade de recursos e informações para ajudá-lo a navegar pelo mundo da agricultura e do desenvolvimento rural. Quer você seja um agricultor experiente procurando as últimas inovações, um produtor rural buscando expandir sua rede, ou um morador urbano interessado em aprender mais sobre de onde vem sua comida, temos algo para todos. Navegue pelo nosso site para descobrir mais sobre quem somos e o que fazemos. Explore nossos eventos futuros, confira nossos recursos educacionais e descubra como você pode se envolver. Juntos, podemos cultivar um futuro mais verde.</p>
+                <p>Além disso, oferecemos uma plataforma de networking onde você pode se conectar com outros profissionais do setor, compartilhar ideias e colaborar em projetos. Também temos uma seção de blog onde compartilhamos as últimas notícias e tendências do setor agrícola. Se você está procurando por conselhos de especialistas, dicas de agricultura ou apenas quer se manter atualizado sobre o que está acontecendo no mundo da agricultura, o Agro Conecta é o lugar para você.</p>
+            </div>
+            <div id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>No Agro Conecta, temos a visão de unir pessoas do campo e da cidade, desde agricultores a produtores rurais e residentes urbanos. Estamos convencidos de que a colaboração mútua pode nos levar a um futuro mais verde e sustentável. Nosso propósito é criar um espaço virtual onde todos possam adquirir conhecimento, trocar experiências e prosperar coletivamente.</p>
+                <p>Nossa equipe é composta por profissionais experientes em agricultura, desenvolvimento rural e tecnologia. Trabalhamos incansavelmente para fornecer a você as informações mais atualizadas e relevantes. Estamos sempre buscando novas maneiras de melhorar nossa plataforma e adoraríamos ouvir suas sugestões e feedback. Junte-se a nós na jornada para um futuro mais verde e sustentável.</p>
+            </div>
+            <div id="eventos">
+                <h2>Eventos</h2>
+                <ul>
+                    <li>
+                        <h3>Seminário de Desenvolvimento Rural 2024</h3>
+                        <p>O XVII Seminário Internacional de Desenvolvimento Rural Sustentável, Cooperativismo e Economia Solidária (XVI SICOOPES) será realizado de 27 a 30 de agosto de 2024. Este evento reunirá especialistas de todo o mundo para discutir as últimas tendências e inovações em desenvolvimento rural sustentável. O local exato ainda será anunciado.</p>
+                        <p>Este evento é uma excelente oportunidade para aprender com os principais especialistas do setor, fazer networking com colegas e descobrir novas oportunidades de colaboração. As inscrições estarão abertas em breve, então fique atento para mais informações.</p>
+                    </li>
+                    <li>
+                        <h3>Conferência de Agricultura Sustentável 2025</h3>
+                        <p>A Conferência Internacional de Agricultura e Sustentabilidade será realizada em Manaus, Brasil, em 2025. Este evento destacará as melhores práticas em agricultura sustentável e explorará como podemos trabalhar juntos para criar um futuro mais verde. A data exata ainda não foi divulgada.</p>
+                    </li>
+                    <li>
+                        <h3>Feira de Inovação Agropecuária 2024</h3>
+                        <p>A Feira Internacional de Inovação Agropecuária será realizada de 15 a 18 de setembro de 2024. Este evento reunirá inovadores e líderes da indústria agropecuária para discutir e demonstrar as últimas tecnologias e práticas no campo. O local exato ainda será anunciado.</p>
+                    </li>
+                    <li>
+                        <h3>Simpósio de Biodiversidade 2025</h3>
+                        <p>O Simpósio Internacional de Biodiversidade será realizado em Brasília, Brasil, em 2025. Este evento destacará a importância da biodiversidade e discutirá estratégias para a sua conservação. A data exata ainda não foi divulgada.</p>
+                    </li>
+                    <li>
+                        <h3>Conferência de Energia Renovável 2026</h3>
+                        <p>A Conferência Internacional de Energia Renovável será realizada em São Paulo, Brasil, em 2026. Este evento reunirá especialistas em energia renovável de todo o mundo para discutir as últimas tendências e inovações no setor. A data exata ainda não foi divulgada.</p>
+                    </li>
+                </ul>
+            </div>
+            <div id="recursos">
+                <h2>Recursos e Informações</h2>
+                <p>Oferecemos uma variedade de recursos e informações para ajudar agricultores e produtores rurais a ter sucesso. De guias de melhores práticas a estudos de caso detalhados, nossa seção de recursos é um tesouro de conhecimento. Confira nossa seção de recursos para saber mais.</p>
+                <p>Nossos recursos incluem guias de cultivo detalhados para várias culturas, dicas sobre como gerenciar sua fazenda de maneira sustentável, informações sobre as últimas tecnologias agrícolas e muito mais. Seja você um agricultor experiente ou alguém que está apenas começando, temos os recursos de que você precisa para ter sucesso.</p>
+            </div>
+            <div id="calendario">
+                <h2>Calendário de Plantio</h2>
+                <p>Nosso calendário de plantio pode ajudá-lo a planejar sua temporada de cultivo. Ele fornece informações sobre as melhores épocas para plantar suas culturas favoritas, com base em dados históricos e previsões climáticas. Confira nosso calendário de plantio para planejar sua próxima temporada de cultivo.</p>
+                <p>Além disso, nosso calendário de plantio é personalizado para diferentes regiões, garantindo que você obtenha as informações mais relevantes e precisas para sua área. Também fornecemos dicas sobre como cuidar de suas plantas durante cada estágio de crescimento, desde a semeadura até a colheita.</p>
+            </div>
+            <div id="contato">
+                <h2>Contato</h2>
+                <p>Se você tiver alguma dúvida ou sugestão, não hesite em nos contatar! Estamos sempre prontos para ouvir o que nossos usuários têm a dizer. Você pode nos alcançar através do e-mail agro.conecta@gmail.com, ligar para o número (00) 1 2345-6789, ou nos seguir e enviar uma mensagem no Instagram @agroconectaoficial. Estamos ansiosos para interagir com você! 😊</p>
+                <p>Se você tiver alguma dúvida sobre nossos recursos, eventos ou qualquer outra coisa relacionada ao Agro Conecta, ficaremos felizes em ajudar. Nossa equipe de atendimento ao cliente está disponível de segunda a sexta-feira, das 9h às 17h. Esperamos ouvir de você em breve!</p>
+            </div>   
+        </div>
+        
         <script src="main.js"></script>
     </body>
 </html>
