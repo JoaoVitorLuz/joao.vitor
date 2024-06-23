@@ -28,14 +28,11 @@ const informacoesPlantas = {
     tomate: {
         epocaPlantio: 'Primavera até início do Verão',
         colheita: '90 a 120 dias após o plantio',
-        // Adicione mais informações conforme necessário
     },
     alface: {
         epocaPlantio: 'Ano todo em regiões de clima ameno',
         colheita: '30 a 40 dias após o plantio',
-        // Adicione mais informações conforme necessário
     },
-    // Adicione mais plantas e suas informações aqui
 };
 
 function mostrarCalendario(planta) {
@@ -47,7 +44,6 @@ function mostrarCalendario(planta) {
             <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
             <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
             <p>Colheita: ${informacoes.colheita}</p>
-            <!-- Adicione mais parágrafos para outras informações -->
         `;
     } else {
         conteudoCalendario.innerHTML = '';
@@ -67,7 +63,6 @@ function mostrarCalendario(planta) {
             <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
             <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
             <p>Colheita: ${informacoes.colheita}</p>
-            <!-- Adicione mais parágrafos para outras informações -->
         `;
         conteudoCalendario.style.display = 'block';
     }
