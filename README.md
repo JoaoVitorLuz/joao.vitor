@@ -11,7 +11,7 @@ Bem-vindo ao repositório do Agro Conecta! Este é um site dedicado a conectar a
 
 ## Contato
 
-Você pode nos alcançar através do e-mail agro.conecta@gmail.com, ligar para o número (00) 1 2345-6789 ou nos seguir e enviar uma mensagem no Instagram @agroconectaoficial.
+Você pode nos alcançar através do e-mail agroconecta370@gmail.com, ou nos seguir e enviar uma mensagem no Instagram @agroconectaoficial.
 
 ---
 
