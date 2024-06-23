@@ -1,15 +1,17 @@
-:root{
+html {
+    scroll-behavior: smooth;
+}
+:root {
     --verde-escuro: #556b2f;
     --verde-claro: #f4f7c5;
     --branco: #ffffff;
     --verde-oliva: #6b8e23;
 }
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--verde-claro); 
+    background-color: var(--verde-claro);
     color: var(--verde-escuro);
 }
 
@@ -18,69 +20,47 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: var(--verde-oliva); 
+    background-color: var(--verde-oliva);
     color: var(--branco);
 }
-
-.header img {
+.logo {
     width: 80px;
     height: 80px;
-    background-color: var(--verde-escuro);
 }
-
-.site-title{
+.site-title {
     cursor: pointer;
 }
-
-.header .navigation {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
 .navigation button {
-    background: var(--verde-escuro);
-    border: 2px solid var(--verde-oliva);
+    background-color: var(--verde-escuro);
+    border: none;
     color: var(--branco);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 0.8em;
-    padding: 5px 10px;
-    margin: 0 10px;
-    transition: all 0.5s;
+    padding: 10px 20px;
 }
-
 .navigation button:hover {
-    background: var(--verde-oliva);
-    color: var(--verde-escuro);
+    background-color: var(--verde-oliva);
 }
-
-.navigation button:active {
-    background: var(--verde-claro);
-    color: var(--verde-escuro);
-    border-color: var(--verde-escuro);
-}
-
 .content {
-    margin: 20px;
-    background-color:var(--branco); 
     padding: 20px;
-    color: var(--verde-escuro); 
 }
-
-.content p {
-    text-align: justify;
+.footer {
+   background-color: var(--verde-oliva);
+   color: var(--branco);
+   padding: 10px;
+   text-align: center;
 }
-
-#home {
-    padding: 20px;
-    background-color: var(--verde-claro);
+#escolha-planta {
+    background-color: var(--branco);
+    color: var(--verde-escuro);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--verde-escuro);
+}
+#escolha-planta option {
+    padding: 5px;
+}
+#conteudo-calendario h2 {
     color: var(--verde-escuro);
 }
-
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--verde-oliva); 
-    color: var(--branco); 
+#conteudo-calendario p {
+    color: var(--verde-oliva);
 }
