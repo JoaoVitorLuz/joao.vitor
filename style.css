@@ -69,10 +69,10 @@ body {
     padding: 5px;
 }
 
-#conteudo-calendario h2 {
+.calendario-especie h2 {
     color: var(--verde-escuro);
 }
 
-#conteudo-calendario p {
+.calendario-especie p {
     color: var(--verde-oliva);
 }
