@@ -22,7 +22,6 @@ body {
     padding: 20px;
     background-color: var(--verde-oliva);
     color: var(--branco);
-    flex-wrap: wrap;
 }
 .logo {
     width: 80px;
@@ -30,15 +29,12 @@ body {
 }
 .site-title {
     cursor: pointer;
-    flex: 1;
-    text-align: center;
 }
 .navigation button {
     background-color: var(--verde-escuro);
     border: none;
     color: var(--branco);
     padding: 10px 20px;
-    margin: 5px;
 }
 .navigation button:hover {
     background-color: var(--verde-oliva);
@@ -67,29 +63,4 @@ body {
 }
 #conteudo-calendario p {
     color: var(--verde-oliva);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navigation button {
-        width: 100%;
-        margin: 5px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 10px;
-    }
-    .navigation button {
-        padding: 10px;
-        font-size: 14px;
-    }
-    .content {
-        padding: 10px;
-    }
 }
