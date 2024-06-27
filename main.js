@@ -40,11 +40,11 @@ function mostrarCalendario(planta) {
     const conteudoCalendario = document.getElementById('conteudo-calendario');
 
     if (informacoes) {
-        conteudoCalendario.innerHTML = `
+        conteudoCalendario.innerHTML = 
             <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
             <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
             <p>Colheita: ${informacoes.colheita}</p>
-        `;
+        ;
     } else {
         conteudoCalendario.innerHTML = '';
     }
@@ -59,11 +59,11 @@ function mostrarCalendario(planta) {
     const conteudoCalendario = document.getElementById('calendario-' + planta);
 
     if (informacoes && conteudoCalendario) {
-        conteudoCalendario.innerHTML = `
+        conteudoCalendario.innerHTML = 
             <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
             <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
             <p>Colheita: ${informacoes.colheita}</p>
-        `;
+        ;
         conteudoCalendario.style.display = 'block';
     }
 }
