@@ -9,21 +9,7 @@ function showDiv(id) {
         targetSection.scrollIntoView({ behavior: 'smooth' });
     }
 }
-function reloadPage() {
-    window.location.reload();
-}
-function mostrarCalendario(planta) {
-    const calendarios = document.querySelectorAll('.calendario-especie');
-    calendarios.forEach(calendario => {
-        calendario.style.display = 'none';
-    });
-    if (planta) {
-        const calendarioEspecie = document.getElementById('calendario-' + planta);
-        if (calendarioEspecie) {
-            calendarioEspecie.style.display = 'block';
-        }
-    }
-}
+
 const informacoesPlantas = {
     tomate: {
         epocaPlantio: 'Primavera até início do Verão',
@@ -36,34 +22,21 @@ const informacoesPlantas = {
 };
 
 function mostrarCalendario(planta) {
-    const informacoes = informacoesPlantas[planta];
-    const conteudoCalendario = document.getElementById('conteudo-calendario');
-
-    if (informacoes) {
-        conteudoCalendario.innerHTML = 
-            <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
-            <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
-            <p>Colheita: ${informacoes.colheita}</p>
-        ;
-    } else {
-        conteudoCalendario.innerHTML = '';
-    }
-}
-function mostrarCalendario(planta) {
     const calendarios = document.querySelectorAll('.calendario-especie');
     calendarios.forEach(calendario => {
         calendario.style.display = 'none';
     });
 
-    const informacoes = informacoesPlantas[planta];
-    const conteudoCalendario = document.getElementById('calendario-' + planta);
-
-    if (informacoes && conteudoCalendario) {
-        conteudoCalendario.innerHTML = 
-            <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
-            <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
-            <p>Colheita: ${informacoes.colheita}</p>
-        ;
-        conteudoCalendario.style.display = 'block';
+    if (planta) {
+        const informacoes = informacoesPlantas[planta];
+        const calendarioEspecie = document.getElementById('calendario-' + planta);
+        if (informacoes && calendarioEspecie) {
+            calendarioEspecie.innerHTML = `
+                <h2>${planta.charAt(0).toUpperCase() + planta.slice(1)}</h2>
+                <p>Época de Plantio: ${informacoes.epocaPlantio}</p>
+                <p>Colheita: ${informacoes.colheita}</p>
+            `;
+            calendarioEspecie.style.display = 'block';
+        }
     }
 }
