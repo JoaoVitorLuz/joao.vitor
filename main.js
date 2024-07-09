@@ -1,12 +1,13 @@
-function showDiv(id) {
-    const sections = document.querySelectorAll('.content > div');
-    sections.forEach(section => {
-        section.style.display = 'none';
+function mostrarDiv(id) {
+    const secoes = document.querySelectorAll('.content > div');
+    secoes.forEach(secao => {
+        secao.style.display = 'none';
     });
-    const targetSection = document.getElementById(id);
-    if (targetSection) {
-        targetSection.style.display = 'block';
-        targetSection.scrollIntoView({ behavior: 'smooth' });
+
+    const secaoAlvo = document.getElementById(id);
+    if (secaoAlvo) {
+        secaoAlvo.style.display = 'block';
+        secaoAlvo.scrollIntoView({ behavior: 'smooth' });
     }
 }
 
